@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="/css/style.css">      <!-- Global/base styles -->
+    <link rel="stylesheet" href="/css/products.css">  <!-- Page-specific styles -->
+<body>
+    <main>
+      <!-- Page Header -->
+      <div class="page-header">
+        <h2 class="page-title">Adaptive Fashion Products</h2>
+        <div class="page-divider"></div>
+        <p class="page-intro">
+          Discover innovative adaptive clothing and accessories designed to make dressing easier, 
+          more comfortable, and more independent. Each product features thoughtful design elements 
+          that address specific accessibility needs.
+        </p>
+      </div>
+
+    <div class="cards-container">
+      
+    <!-- Server side rendered posts -->
+      <section class="product-grid">
+        <% products.forEach(product => { %>
+            <!-- Reusable product template file -->
+          <%- include("partials/productCard", { product }) %>
+        <% }) %>
+      </section>
+    </div>
+
+    </main>
+</body>
+
+      
+<%- include("partials/footer") %>

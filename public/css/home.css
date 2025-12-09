@@ -1,0 +1,95 @@
+
+/* ==========================================================
+   ICON NAVIGATION ROW (Companies / Products / Disabilities)
+   ========================================================== */
+.button-container {
+  width: 80%;
+  margin: 35px auto 45px;
+}
+
+/* Make both rows a 4-column grid */
+.buttons,
+.button-labels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* four equal columns */
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+
+/* Icon styling */
+.buttons img {
+  height: 60px;
+  margin: auto;
+  transition: transform 0.2s ease;
+}
+
+.buttons img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Label styling */
+.button-labels p {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+/* ==========================================================
+   SECTION TITLES + DIVIDERS
+   ========================================================== */
+.section-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 6px;
+}
+
+/* Small accent bar under each title */
+.section-divider {
+  width: 90px;
+  height: 4px;
+  background: #007c91;        /* teal accent */
+  margin: 4px auto 18px auto;
+  border-radius: 999px;
+}
+
+/* ==========================================================
+   INFORMATION CARDS (Mission, About, Sponsor)
+   ========================================================== */
+.info-containers {
+  background-color: #b2e6ee; /* lighter teal card color */
+  width: 65%;
+  margin: 25px auto;
+  padding: 28px 35px;
+  border-radius: 14px;
+  text-align: center;
+
+  /* subtle shadow for card effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Text inside cards */
+.info-containers p {
+  font-size: 18px;
+  margin-bottom: 18px;
+  max-width: 850px;
+  line-height: 1.6;
+}
+
+/* Sponsor image styling */
+.info-containers img {
+  height: 300px;
+  width: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}

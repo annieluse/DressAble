@@ -1,0 +1,23 @@
+<div class="product"
+     data-id="<%= product.id %>"
+     data-name="<%= product.name %>"
+     data-image="<%= product.image %>"
+     data-description="<%= product.description %>"
+     data-category="<%= product.category %>"
+     data-features="<%= product.features %>"
+     data-link="<%= product.link %>">
+
+  <div class="product-contents">
+
+    <a href="/products/<%= product.id %>" class="product-card">
+        <img src="<%= product.image %>" alt="<%= product.name %>" class="product-image">
+        
+        <div class="product-info">
+            <h3><%= product.name %></h3>
+            <p><%= product.description %></p>
+            <span class="learn-more-btn">Learn More</span>
+        </div>
+    </a>
+
+  </div>
+</div>

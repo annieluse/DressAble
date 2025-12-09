@@ -1,0 +1,99 @@
+<%- include("partials/header") %>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="/css/style.css">      <!-- Global/base styles -->
+    <link rel="stylesheet" href="/css/forum.css">  <!-- Page-specific styles -->
+    <script defer src="/js/forum.js"></script>
+
+<body>
+    <main>
+      <!-- Page Header -->
+      <div class="page-header">
+        <h2 class="page-title">Accessible Fashion Forum</h2>
+        <div class="page-divider"></div>
+        <p class="page-intro">
+            Connect with others, ask questions, share recommendations, and learn from real experiences in the accessible fashion community. 
+            Browse posts, filter by tags, and explore discussions on clothing solutions that meet diverse needs.
+        </p>
+      </div>
+<div class="filter-section">
+    
+  <!-- Clothing Tags Column -->
+  <div class="filter-box">
+    <div class="tag-header">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126422.png" alt="tag icon" class="tag-icon"/>
+        <h3 class="filter-title">Clothing Tags</h3>
+    </div>
+    <div class="tag-grid">
+      <button class="tag-button">T-shirt</button>
+      <button class="tag-button">Sweater</button>
+      <button class="tag-button">Hoodie</button>
+      <button class="tag-button">Jacket</button>
+      <button class="tag-button">Vest</button>
+      <button class="tag-button">Jeans</button>
+      <button class="tag-button">Pants</button>
+      <button class="tag-button">Shorts</button>
+      <button class="tag-button">Skirt</button>
+      <button class="tag-button">Leggings</button>
+      <button class="tag-button">Hat</button>
+      <button class="tag-button">Scarf</button>
+      <button class="tag-button">Gloves</button>
+      <button class="tag-button">Belt</button>
+      <button class="tag-button">Tie</button>
+      <button class="tag-button">Socks</button>
+      <button class="tag-button">Shoes</button>
+      <button class="tag-button">Boots</button>
+      <button class="tag-button">Sneakers</button>
+      <button class="tag-button">Slippers</button>
+      <button class="tag-button">Sandals</button>
+      <button class="tag-button">Dress</button>
+      <button class="tag-button">Suit</button>
+      <button class="tag-button">Underwear</button>
+      <button class="tag-button">Pajamas</button>
+      <button class="tag-button">Sports Wear</button>
+    </div>
+  </div>
+
+  <!-- Disability Tags Column -->
+  <div class="filter-box">
+    <div class="tag-header">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126422.png" alt="tag icon" class="tag-icon" />
+        <h3 class="filter-title">Disability Tags</h3>
+    </div>
+    <div class="tag-grid">
+      <button class="tag-button">Wheelchair</button>
+      <button class="tag-button">Amputee</button>
+      <button class="tag-button">Limb Differences</button>
+      <button class="tag-button">Blind</button>
+      <button class="tag-button">Visually Impaired</button>
+      <button class="tag-button">Elderly</button>
+      <button class="tag-button">Autism</button>
+      <button class="tag-button">Sensory Processing</button>
+      <button class="tag-button">Neuromuscular Disorders</button>
+      <button class="tag-button">Cognitive Disabilities</button>
+      <button class="tag-button">Developmental Disabilities</button>
+      <button class="tag-button">Medical Device</button>
+      <button class="tag-button">Incontinence Needs</button>
+      <button class="tag-button">Chronic Illnesses</button>
+      <button class="tag-button">ADHD</button>
+      <button class="tag-button">Temporary Disabilities</button>
+      <button class="tag-button">Little People/ Dwarfism</button>
+    </div>
+  </div>
+</div>
+
+
+  <div id="post-container"></div>
+
+
+    </main>
+
+    <script src="forum.js"></script> <!-- at the bottom of the page -->
+</body>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "adaptive-brand-co",
+    "name": "Adaptive Brand Co.",
+    "logo": "https://via.placeholder.com/120",
+    "description": "Pioneering adaptive clothing with magnetic closures and easy-access designs for everyday comfort.",
+    "website": null
+  },
+  {
+    "id": "inclusive-fashion-inc",
+    "name": "Inclusive Fashion Inc.",
+    "logo": "https://via.placeholder.com/120",
+    "description": "Stylish, functional clothing designed with input from the disability community.",
+    "website": null
+  },
+  {
+    "id": "easywear-designs",
+    "name": "EasyWear Designs",
+    "logo": "https://via.placeholder.com/120",
+    "description": "Comfortable, adaptive clothing solutions for individuals with limited mobility.",
+    "website": null
+  },
+  {
+    "id": "universal-style",
+    "name": "Universal Style",
+    "logo": "https://via.placeholder.com/120",
+    "description": "Fashion-forward adaptive wear that doesn't compromise on style or accessibility.",
+    "website": null
+  },
+  {
+    "id": "access-apparel",
+    "name": "Access Apparel",
+    "logo": "https://via.placeholder.com/120",
+    "description": "Innovative clothing designs featuring adaptive features and sensory-friendly materials.",
+    "website": null
+  },
+  {
+    "id": "mobility-fashion",
+    "name": "Mobility Fashion",
+    "logo": "https://via.placeholder.com/120",
+    "description": "Wheelchair-friendly clothing with seated fit and easy dressing features.",
+    "website": null
+  }
+]

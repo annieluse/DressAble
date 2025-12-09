@@ -1,0 +1,127 @@
+/* ==========================================================
+   Global body styles and fonts
+   ========================================================== */
+body {
+  margin: 0;
+  font-family: "Lato", "Segoe UI", sans-serif;
+  background-color: #ffffff;  /* clean white background */
+  color: #000;
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   HEADER LAYOUT
+   - Three-part flexible layout:
+       [ left (logo) ] [ center (title) ] [ right (icons) ]
+   ========================================================== */
+header {
+  background-color: #8ed8e4;   /* OSU teal-blue */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  height: 100px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Logo styling */
+.logo-container img {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #6f6f6f;
+}
+
+/* group logo + title together on the left */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;   /* spacing between logo + title */
+  flex: 0;     /* prevents weird centering */
+}
+
+/* make title left-aligned inside header */
+.site-title {
+  text-align: left;
+  margin: 0;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 20px;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Right side header icons */
+.icon-container {
+  flex: 1;                    /* balances layout */
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.icon-container img {
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.icon-container img:hover {
+  transform: scale(1.2);      /* hover pop effect */
+  cursor: pointer;
+}
+
+/* ==========================================================
+   MAIN CONTENT AREA
+   ========================================================== */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+/* ==========================================================
+   PAGE TITLE & INTRO
+   ========================================================== */
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.page-divider {
+  width: 90px;
+  height: 4px;
+  background: #007c91;
+  margin: 8px auto 20px;
+  border-radius: 999px;
+}
+
+.page-intro {
+  font-size: 18px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+footer {
+  background: #6f6f6f;
+  color: white;
+  text-align: center;
+  padding: 18px 12px;
+  font-size: 14px;
+  margin-top: 60px;
+}

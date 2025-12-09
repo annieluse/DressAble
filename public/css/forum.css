@@ -1,0 +1,154 @@
+
+/* ==========================================================
+   POST CARDS LIST (Vertical Stack)
+   ========================================================== */
+#post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-card {
+  background-color: #b2e6ee;
+  border-radius: 14px;
+  padding: 35px 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+/* Company logo in card */
+.post-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background: #ffe6b6;
+  color: #000000;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.tag-button.active {
+    background-color: #946090;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   Sort and filter
+   ========================================================== */
+/* Parent container for both tag groups */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 35px;
+  flex-wrap: wrap; /* keeps layout clean on smaller screens */
+}
+
+/* Individual tag boxes */
+.filter-box {
+  background: #b7e4ee;
+  padding: 30px 35px;
+  border-radius: 22px;
+  width: 450px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+  transition: 0.25s ease;
+}
+
+.filter-box:hover {
+  transform: translateY(-3px);
+}
+
+/* Make buttons look like rounded pills again */
+.tag-button {
+  background: #ffe6b6;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.tag-button:hover {
+  background: #edc66c;
+  transform: scale(1.06);
+}
+
+/* Make tag grid tighter and centered */
+.tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+/* Reduce padding to improve text-block balance */
+.filter-box {
+  padding: 25px 30px 30px;
+  width: 430px; /* Slightly narrower to match screenshot spacing */
+}
+
+/* Align icon + title better visually */
+.tag-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.filter-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Optional slight vertical nudge on icon */
+.tag-icon {
+  width: 24px;
+  transform: translateY(2px);
+}
+
+.tag-button.active {
+  background: #b58cd8;        /* highlight color you had */
+  color: white;
+  transform: none;            /* prevent jump scaling */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+

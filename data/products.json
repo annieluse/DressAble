@@ -1,0 +1,56 @@
+[
+  {
+    "id": "magnetic-button-shirt",
+    "name": "Magnetic Button Shirt",
+    "image": "https://via.placeholder.com/150",
+    "description": "Classic button-down shirt with hidden magnetic closures for easy one-handed dressing. Available in multiple colors and sizes.",
+    "category": "Tops",
+    "features": ["Magnetic closures", "Multiple colors", "One-handed dressing"],
+    "link": null
+  },
+  {
+    "id": "adaptive-jeans-seated",
+    "name": "Seated-Fit Adaptive Jeans",
+    "image": "https://via.placeholder.com/150",
+    "description": "Specially designed jeans with higher back rise and seated fit for wheelchair users. Features easy-pull tabs and elastic waistband.",
+    "category": "Bottoms",
+    "features": ["Seated fit", "Elastic waistband", "Pull tabs"],
+    "link": null
+  },
+  {
+    "id": "sensory-friendly-tshirt",
+    "name": "Sensory-Friendly T-Shirt",
+    "image": "https://via.placeholder.com/150",
+    "description": "Ultra-soft, tagless t-shirt made from bamboo fabric. Flat seams reduce irritation and provide all-day comfort.",
+    "category": "Tops",
+    "features": ["Tagless", "Flat seams", "Bamboo fabric", "Sensory-friendly"],
+    "link": null
+  },
+  {
+    "id": "side-zip-pants",
+    "name": "Side-Zip Pants",
+    "image": "https://via.placeholder.com/150",
+    "description": "Comfortable pants with full-length side zippers for easier dressing. Perfect for limited mobility or post-surgery recovery.",
+    "category": "Bottoms",
+    "features": ["Full-length zipper", "Easy dressing", "Mobility-friendly"],
+    "link": null
+  },
+  {
+    "id": "adaptive-jacket",
+    "name": "Easy-Access Jacket",
+    "image": "https://via.placeholder.com/150",
+    "description": "Stylish jacket with magnetic closures and extended zipper pull for easier gripping. Water-resistant and lightweight.",
+    "category": "Outerwear",
+    "features": ["Magnetic closures", "Extended zipper pull", "Water-resistant"],
+    "link": null
+  },
+  {
+    "id": "hands-free-slip-on-shoes",
+    "name": "Hands-Free Slip-On Shoes",
+    "image": "https://via.placeholder.com/150",
+    "description": "Innovative slip-on shoes with collapsible heel for easy entry. Extra-wide opening and adjustable fit.",
+    "category": "Footwear",
+    "features": ["Collapsible heel", "Slip-on", "Wide opening", "Adjustable fit"],
+    "link": null
+  }
+]
