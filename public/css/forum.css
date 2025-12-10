@@ -134,6 +134,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  align-items:center;
   max-height: 85px;
   gap: 8px;
 }
@@ -145,7 +146,7 @@
   font-weight: 600;
   max-height: 75px;
   margin-top: 6px; 
-  margin-bottom: 10px;            /* <-- removes default margin */
+  margin-bottom: 10px;        
   padding: 0;  
 }
 
@@ -162,7 +163,7 @@
 
 .tag-icon {
   width: 24px;
-  transform: translateY(-4px);
+  transform: translateY(-5px);
 }
 
 .tag-header-row {
@@ -179,7 +180,6 @@
   gap:8px;
 }
 
-/* turn search input into an input instead of div */
 .search-box{
   background:white;
   border:none;
@@ -187,12 +187,11 @@
   border-radius:10px;
   font-size:14px;
   box-shadow:0 2px 4px rgba(0,0,0,0.08);
-  width:150px;
+  width:170px;
 }
 
 .search-icon{
   width:22px;
-  cursor:pointer;
 }
 
 
@@ -203,7 +202,7 @@
 }
 
 .tag-button.active {
-  background: #b58cd8;        /* highlight color you had */
+  background: #CC85FF;        /* highlight color */
   color: white;
   transform: none;            /* prevent jump scaling */
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
@@ -219,7 +218,8 @@
 
 
 .toggle-tags-btn {
-  background:#007c91;
+  background:#165A64;
+  color:white;
   border: none;
   padding: 7px 14px;
   border-radius: 22px;
@@ -228,7 +228,7 @@
   cursor: pointer;
   transition: background 0.2s;
   box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-  white-space:nowrap;      /* <-- prevents wrapping mid-word */
+  white-space:nowrap;      /* prevents wrapping mid-word */
   order: 999; 
   display:inline-flex;
   align-items:center;
@@ -236,7 +236,7 @@
 }
 
 .toggle-tags-btn:hover { 
-  background:#005a67; 
+  background:#144A52; 
   transform: scale(1.06);
 }
 

@@ -34,6 +34,7 @@ app.get("/forum", (req, res) => {
     res.render("forum");
 });
 
+app.use(express.static("public"));
 const companies = require("./data/companies.json");
 const products = require("./data/products.json");
 const disabilities = require("./data/disabilities.json");
@@ -81,6 +82,6 @@ app.use((req, res) => {
 })
 
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });

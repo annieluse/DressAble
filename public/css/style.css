@@ -26,29 +26,24 @@ header {
 
 /* Logo styling */
 .logo-container img {
-  height: 70px;
-  width: 70px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #6f6f6f;
+  height: 90px;
 }
 
 /* group logo + title together on the left */
 .header-left {
   display: flex;
-  align-items: center;
-  gap: 20px;   /* spacing between logo + title */
-  flex: 0;     /* prevents weird centering */
+  align-items: center; 
+  gap: 16px; /* slightly tighter spacing */
 }
 
-/* make title left-aligned inside header */
 .site-title {
-  text-align: left;
-  margin: 0;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 28px;
-  font-weight: 800;
-  padding: 20px;
+  font-size: 50px; 
+  font-weight: 600;
+  margin: 0;
+  padding: 0;   /* removes upward shift */
+  line-height: 1; /* keeps it vertically centered */
+    transform: translateY(3px)
 }
 
 .site-title a {
@@ -61,11 +56,11 @@ header {
   flex: 1;                    /* balances layout */
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 28px;
 }
 
 .icon-container img {
-  height: 40px;
+  height: 38px;
   transition: transform 0.2s ease;
 }
 
