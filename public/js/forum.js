@@ -125,3 +125,39 @@ function filterPosts() {
 }
 
 renderPosts(forumPosts);
+
+/* ===========================
+   SHOW MORE / SHOW LESS TAGS
+=========================== */
+
+// Allow collapsing tag groups inside filter-boxes
+document.querySelectorAll(".filter-box").forEach(box => {
+  const grid = box.querySelector(".collapsible-tags");
+  const btn = box.querySelector(".toggle-tags-btn");
+  if (!grid || !btn) return;  // safety check
+
+  btn.addEventListener("click", () => {
+    grid.classList.toggle("expanded");
+    btn.textContent = grid.classList.contains("expanded") 
+      ? "Show Less" 
+      : "Show More";
+  });
+});
+
+// --- TAG SEARCH FILTERING --- //
+document.querySelectorAll(".filter-box").forEach(box => {
+    const input = box.querySelector(".search-box"); //look for input from the search box 
+    const tags = box.querySelectorAll(".tag-button"); //tags from inside tag grid
+    if (!input) return; //if no input return (dont need to search)
+ 
+    input.addEventListener("input", () => {
+        const value = input.value.toLowerCase(); //transform text to all lowercase for better searching
+
+        tags.forEach(tag => { //for each tag listed
+            const text = tag.textContent.toLowerCase(); //get the text from the tag and lowercase it
+
+            // Show tags containing the input text
+            tag.style.display = text.includes(value) ? "inline-flex" : "none";
+        });
+    });
+});

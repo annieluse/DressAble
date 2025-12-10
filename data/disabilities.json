@@ -1,0 +1,50 @@
+[
+  {
+    "id": "limited-mobility-wheelchair",
+    "name": "Limited Mobility & Wheelchair Users",
+    "image": "https://icons.iconarchive.com/icons/fa-team/fontawesome/256/FontAwesome-Wheelchair-Move-icon.png",
+    "description": "Information and resources about individuals who use wheelchairs or have limited mobility. Find clothing designed for seated positioning, easy transfers, and independent dressing.",
+    "clothingNeeds": ["Seated fit", "Easy transfers", "Adaptive closures"],
+    "link": null
+  },
+  {
+    "id": "arthritis-limited-dexterity",
+    "name": "Arthritis & Limited Dexterity",
+    "image": "https://cdn-icons-png.flaticon.com/512/3588/3588314.png",
+    "description": "Adaptive clothing solutions for those with arthritis, reduced hand strength, or limited fine motor skills. Discover magnetic closures, elastic waistbands, and easy-grip features.",
+    "clothingNeeds": ["Magnetic closures", "Elastic waistbands", "Easy-grip features"],
+    "link": null
+  },
+  {
+    "id": "sensory-processing-disorders",
+    "name": "Sensory Processing Disorders",
+    "image": "https://cdn-icons-png.flaticon.com/512/2913/2913133.png",
+    "description": "Resources for individuals with sensory sensitivities including autism spectrum disorders. Find tagless, seamless, and soft-fabric clothing options that minimize irritation.",
+    "clothingNeeds": ["Tagless", "Seamless stitching", "Soft fabrics"],
+    "link": null
+  },
+  {
+    "id": "visual-impairments",
+    "name": "Visual Impairments",
+    "image": "https://cdn-icons-png.flaticon.com/512/2785/2785482.png",
+    "description": "Clothing solutions for individuals who are blind or have low vision. Explore tactile markers, high-contrast designs, and organizational systems for easy wardrobe management.",
+    "clothingNeeds": ["Tactile labels", "High-contrast designs", "Organized wardrobe systems"],
+    "link": null
+  },
+  {
+    "id": "stroke-hemiplegia",
+    "name": "Stroke & Hemiplegia",
+    "image": "https://cdn-icons-png.flaticon.com/512/2917/2917995.png",
+    "description": "Adaptive fashion for individuals recovering from stroke or living with one-sided paralysis. Find one-handed dressing solutions and specially designed garments.",
+    "clothingNeeds": ["One-handed dressing", "Adaptive garments"],
+    "link": null
+  },
+  {
+    "id": "post-surgery-recovery",
+    "name": "Post-Surgery & Recovery",
+    "image": "https://cdn-icons-png.flaticon.com/512/2913/2913106.png",
+    "description": "Temporary and permanent solutions for post-operative care. Discover front-opening garments, easy-access designs, and comfortable recovery wear.",
+    "clothingNeeds": ["Front-opening", "Easy-access clothing", "Comfort materials"],
+    "link": null
+  }
+]

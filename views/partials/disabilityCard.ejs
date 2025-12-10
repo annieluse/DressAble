@@ -1,0 +1,20 @@
+<div class="disability"
+     data-id="<%= disability.id %>"
+     data-name="<%= disability.name %>"
+     data-image="<%= disability.image %>"
+     data-description="<%= disability.description %>">
+
+  <div class="disability-contents">
+
+    <a href="/disabilities/<%= disability.id %>" class="disability-card">
+        <img src="<%= disability.image %>" alt="<%= disability.name %> icon" class="disability-icon">
+        
+        <div class="disability-info">
+            <h3><%= disability.name %></h3>
+            <p><%= disability.description %></p>
+            <span class="learn-more-btn">Learn More</span>
+        </div>
+    </a>
+
+  </div>
+</div>

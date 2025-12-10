@@ -1,0 +1,103 @@
+<%- include("partials/header") %>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/companyPage.css">
+
+<body>
+<main class="company-page">
+
+    <a href="/companies" class="back-link">← Back to Companies</a>
+
+    <!-- ============================
+         HEADER
+    ============================= -->
+    <div class="company-header">
+        <img src="<%= company.logo %>" alt="<%= company.name %> Logo" class="company-logo-large">
+
+        <div class="company-header-info">
+            <h1><%= company.name %></h1>
+
+            <% if (company.tagline) { %>
+                <p class="company-tagline"><%= company.tagline %></p>
+            <% } %>
+
+            <% if (company.website) { %>
+                <a href="<%= company.website %>" target="_blank" class="company-website-btn">Visit Website</a>
+            <% } %>
+        </div>
+    </div>
+
+    <!-- ============================
+         ABOUT
+    ============================= -->
+    <div class="content-section">
+        <h2 class="section-title">About the Company</h2>
+        <div class="section-divider"></div>
+
+        <% if (company.about && company.about.length > 0) { %>
+            <% company.about.forEach(paragraph => { %>
+                <p><%= paragraph %></p>
+            <% }) %>
+        <% } else if (company.description) { %>
+            <p><%= company.description %></p>
+        <% } else { %>
+            <p>No company description available.</p>
+        <% } %>
+    </div> <!-- 🟢 only ONE closing div here -->
+
+    <!-- ============================
+         FEATURES
+    ============================= -->
+    <div class="content-section">
+        <h2 class="section-title">Accessibility Features</h2>
+        <div class="section-divider"></div>
+
+        <% if (company.features && company.features.length > 0) { %>
+            <ul>
+                <% company.features.forEach(feature => { %>
+                    <li><strong><%= feature.label %>:</strong> <%= feature.text %></li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p>No accessibility feature data available.</p>
+        <% } %>
+    </div>
+
+    <!-- ============================
+         PRODUCT LINES
+    ============================= -->
+    <% if (company.product_lines && company.product_lines.length > 0) { %>
+    <div class="content-section">
+        <h2 class="section-title">Product Lines</h2>
+        <div class="section-divider"></div>
+
+        <div class="products-grid">
+            <% company.product_lines.forEach(product => { %>
+                <div class="product-item">
+                    <img src="<%= product.image %>" alt="<%= product.name %>" class="product-image">
+                    <h4><%= product.name %></h4>
+                    <p><%= product.description %></p>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+    <% } %>
+
+    <!-- ============================
+         VALUES
+    ============================= -->
+    <% if (company.values && company.values.length > 0) { %>
+    <div class="content-section">
+        <h2 class="section-title">Company Values</h2>
+        <div class="section-divider"></div>
+
+        <% company.values.forEach(val => { %>
+            <p><strong><%= val.title %>:</strong> <%= val.text %></p>
+        <% }) %>
+    </div>
+    <% } %>
+
+</main>
+</body>
+
+<%- include("partials/footer") %>

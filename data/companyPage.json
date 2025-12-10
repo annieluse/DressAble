@@ -1,0 +1,187 @@
+[
+  {
+    "id": "tommy-hilfiger",
+    "name": "Tommy Hilfiger",
+    "about": [
+      "Tommy Hilfiger is a global fashion brand known for its classic American style with a modern twist. Founded in 1985, the brand offers apparel, accessories, and footwear for men, women, and children.",
+      "In 2016, Tommy Adaptive launched. Collection aims to make fashion more inclusive for people with disabilities by modifying classic Tommy styles."
+    ],
+    "features": [
+      { "label": "Magnetic Buttons", "text": "Easy fastening alternatives for those with dexterity limitations" },
+      { "label": "One-handed Zippers", "text": "Designed for improved accessibility" },
+      { "label": "Prosthetic-friendly Seams", "text": "Accommodates prosthetics, casts and braces" },
+      { "label": "Adjustable Fit", "text": "Adjustable waistbands and hems" },
+      { "label": "Comfort Construction", "text": "No uncomfortable seams, pockets, or tags" },
+      { "label": "Multiple Openings", "text": "Front, side, and back openings for easy dressing" }
+    ],
+    "price_range": "$30-$150"
+  },
+
+  {
+    "id": "no-limbits",
+    "name": "No Limbits",
+    "about": [
+      "Founded in 2019, No Limbits is a disability owned adaptive clothing brand founded by Erica Cole, an engineer and amputee. The company designs modern, functional, and affordable clothing for amputees, wheelchair users, and individuals with sensory sensitivities.",
+      "Adaptive clothing lines based on customer’s specific needs rather than their general disability category. Lines include unlimbed, wheelchair, sensory, and limited dexterity."
+    ],
+    "features": [
+      { "label": "Magnetic Closures", "text": "Improved dressing access" },
+      { "label": "Adjustable Fit", "text": "Waistbands and hems for custom comfort" },
+      { "label": "One-handed Zippers", "text": "Designed for limited dexterity" },
+      { "label": "Prosthetic-friendly Openings", "text": "Side zippers for casts and braces" },
+      { "label": "Sensory Friendly", "text": "Soft fabrics with reduced irritation" },
+      { "label": "No Harsh Construction", "text": "No uncomfortable seams, pockets, or tags" }
+    ],
+    "price_range": "$20-$80"
+  },
+
+  {
+    "id": "joe-and-bella",
+    "name": "Joe & Bella",
+    "about": [
+      "Joe & Bella is a “passion project” that came from the personal experiences of caring and advocating for degrading mobility in aging parents. Though their clothing line is intended to bring a sense of autonomy and dignity for older adults, their adaptive clothing can aid a wide range of women and men who have mobility obstacles.",
+      "Designed for older adults and people with limited mobility. Focuses on easy dressing and undressing. Reduces the need for excessive struggles and physical assistance."
+    ],
+    "features": [
+      { "label": "Magnetic/Zipper Access", "text": "Placed for seated ease" },
+      { "label": "Open-Back Clothing", "text": "Ideal for caregivers and limited mobility" },
+      { "label": "Discreet Adaptive Designs", "text": "Maintains normal appearance but more functional" }
+    ],
+    "price_range": "$15-$130"
+  },
+
+  {
+    "id": "magnaready",
+    "name": "MagnaReady",
+    "about": [
+      "MagnaReady was created on the basis of restoring freedom in the daily routine of getting dressed and undressed. The company was founded after the personal experience of caregiving for a spouse with Parkinson’s disease.",
+      "They pioneered magnetic shirt closures and offer functional and stylish clothing options for men and women."
+    ],
+    "features": [
+      { "label": "Magnetic Shirts", "text": "Wide range of adaptive tops and jackets" },
+      { "label": "Low Maintenance", "text": "Machine washable & wrinkle resistant" },
+      { "label": "Normal Appearance", "text": "Looks like standard fashion clothing" }
+    ],
+    "price_range": "$40-$135"
+  },
+
+  {
+    "id": "seven7",
+    "name": "Seven7 Adaptive Line",
+    "about": [
+      "Seven7 Jeans introduced their adaptive line to offer stylish, functional denim and casual wear to people living with disabilities.",
+      "They emphasize accessibility without compromising style and aim to serve a broad range of individuals."
+    ],
+    "features": [
+      { "label": "Stretch Denim", "text": "Flexible movement for wheelchair seating" },
+      { "label": "Adaptive Closures", "text": "Magnetic or velcro fastenings" },
+      { "label": "Adjustable Fit", "text": "High-rise back for seated comfort" },
+      { "label": "Skin Safe", "text": "Minimal seams reducing irritation" }
+    ],
+    "price_range": "$50-$80"
+  },
+
+  {
+    "id": "zappos-adaptive",
+    "name": "Zappos Adaptive",
+    "about": [
+      "Zappos Adaptive was created to provide convenient and fashionable clothing options for people with disabilities or sensitivities.",
+      "Products available for elderly, kids, and adults across clothing and footwear."
+    ],
+    "features": [
+      { "label": "Reversible Clothing", "text": "Wear front or back interchangeably" },
+      { "label": "One-handed Zippers", "text": "Improves dexterity independence" },
+      { "label": "Sensory Friendly", "text": "Anti-irritation fabrics with removable tags" },
+      { "label": "Medical Fit Footwear", "text": "Extra depth and width for swelling" }
+    ],
+    "price_range": "$20-$280"
+  },
+
+  {
+    "id": "adidas-seated",
+    "name": "Adidas",
+    "about": [
+      "Adidas started a line of clothing designed to better fit seated athletes. Their line came out in 2024 and is used for National Wheelchair Basketball uniforms."
+    ],
+    "features": [
+      { "label": "Seated Fit", "text": "Built for wheelchair athletes" },
+      { "label": "Back Loop Pulls", "text": "Easier removal of shirts" }
+    ],
+    "price_range": "$46-$60"
+  },
+
+  {
+    "id": "friendly-shoes",
+    "name": "Friendly Shoes",
+    "about": [
+      "Started by an occupational therapist. Designed for easy slip-on shoes with zipper access for low dexterity users."
+    ],
+    "features": [
+      { "label": "Adaptive Zippers", "text": "Helps slip on shoes while appearing standard" }
+    ],
+    "price_range": "$80-$100"
+  },
+
+  {
+    "id": "nike-flyease",
+    "name": "Nike",
+    "about": [
+      "Nike introduced FlyEase technology in 2015 after a letter from a teen with cerebral palsy.",
+      "Designed for broad disability accessibility with easy-entry shoes."
+    ],
+    "features": [
+      { "label": "Hands-Free Entry", "text": "No lace/no pull design options" },
+      { "label": "Adaptive Closures", "text": "Magnetic + zipper systems" },
+      { "label": "Expanded Sizing", "text": "Options for varied body types" },
+      { "label": "Collapsible Heels", "text": "Slide-in wearing support" },
+      { "label": "Quick Release Laces", "text": "Fast fastening system" }
+    ],
+    "price_range": "$80-$160"
+  },
+
+  {
+    "id": "jcpenney-jamey-perry",
+    "name": "JCPenney - Jamey Perry",
+    "about": [
+      "JCPenney introduced the Jamey Perry line in 2021 for wheelchair users and people with disabilities."
+    ],
+    "features": [
+      { "label": "Adaptive Fastening", "text": "Snap and magnetic closures" },
+      { "label": "Medical Access Points", "text": "Hidden for tubing or devices" },
+      { "label": "Bodysuit Openings", "text": "Easier dressing for caregivers" },
+      { "label": "Accessible Cuffs", "text": "Improved comfort fit" }
+    ],
+    "price_range": "$30-$100"
+  },
+
+  {
+    "id": "buck-and-buck",
+    "name": "Buck & Buck",
+    "about": [
+      "Buck & Buck specializes in adaptive underwear and clothing for people with limited mobility and incontinence needs."
+    ],
+    "features": [
+      { "label": "Closure Variety", "text": "Button, velcro, zip and magnetic" },
+      { "label": "Absorbent Materials", "text": "Moisture wicking comfort" },
+      { "label": "Seamless Construction", "text": "Reduces irritation" },
+      { "label": "Transfer Friendly", "text": "High coverage for assistance" },
+      { "label": "Soft Elastic", "text": "Comfort waist for sitting" }
+    ],
+    "price_range": "$15-$45"
+  },
+
+  {
+    "id": "vans-adaptive",
+    "name": "VANS",
+    "notes": "Brand discontinued — kept for historical reference",
+    "about": [
+      "VANS partnered with A.skate Foundation and IBCCES to create sensory-friendly shoes for children with Autism."
+    ],
+    "features": [
+      { "label": "Soft Insoles", "text": "Increased sensory comfort" },
+      { "label": "Adaptive Footwear", "text": "Slip-on or lace style options" },
+      { "label": "Sensory Colorways", "text": "Designed to reduce visual overwhelm" }
+    ],
+    "price_range": "$40-$60"
+  }
+]

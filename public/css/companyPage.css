@@ -1,0 +1,211 @@
+/* ==========================================================
+   MAIN CONTENT
+   ========================================================== */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+/* Back button */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #007c91;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+  transition: gap 0.2s ease;
+}
+
+.back-link:hover {
+  gap: 12px;
+}
+
+/* ==========================================================
+   COMPANY HEADER SECTION
+   ========================================================== */
+.company-header {
+  background-color: #b2e6ee;
+  border-radius: 14px;
+  padding: 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.company-logo-large {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.company-header-info h1 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.company-tagline {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.company-website-btn {
+  display: inline-block;
+  background-color: #007c91;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.company-website-btn:hover {
+  background-color: #005f6f;
+}
+
+/* ==========================================================
+   CONTENT SECTIONS
+   ========================================================== */
+.content-section {
+  background-color: #b2e6ee;
+  border-radius: 14px;
+  padding: 35px 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: #007c91;
+  margin: 0 0 20px 0;
+  border-radius: 999px;
+}
+
+.content-section p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0 0 15px 0;
+}
+
+.content-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lists in content sections */
+.content-section ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.content-section li {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================
+   PRODUCT SHOWCASE GRID
+   ========================================================== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.product-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-item h4 {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.product-item p {
+  font-size: 15px;
+  margin: 0;
+  color: #444;
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+footer {
+  background: #6f6f6f;
+  color: white;
+  text-align: center;
+  padding: 18px 12px;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+   ========================================================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 12px;
+  }
+
+  .icon-container {
+    align-self: flex-end;
+  }
+
+  .company-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .company-logo-large {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content-section {
+    padding: 25px 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}

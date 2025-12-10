@@ -1,99 +1,95 @@
 <%- include("partials/header") %>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-    <!-- External CSS file -->
-    <link rel="stylesheet" href="/css/style.css">      <!-- Global/base styles -->
-    <link rel="stylesheet" href="/css/forum.css">  <!-- Page-specific styles -->
-    <script defer src="/js/forum.js"></script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aleo&family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;800&display=swap" rel="stylesheet"/>
+
+<!-- Global + Page CSS -->
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/forum.css">
+
+<script defer src="/js/forum.js"></script>
 
 <body>
-    <main>
-      <!-- Page Header -->
-      <div class="page-header">
-        <h2 class="page-title">Accessible Fashion Forum</h2>
-        <div class="page-divider"></div>
-        <p class="page-intro">
-            Connect with others, ask questions, share recommendations, and learn from real experiences in the accessible fashion community. 
-            Browse posts, filter by tags, and explore discussions on clothing solutions that meet diverse needs.
-        </p>
-      </div>
-<div class="filter-section">
-    
-  <!-- Clothing Tags Column -->
-  <div class="filter-box">
-    <div class="tag-header">
-        <img src="https://cdn-icons-png.flaticon.com/512/126/126422.png" alt="tag icon" class="tag-icon"/>
-        <h3 class="filter-title">Clothing Tags</h3>
-    </div>
-    <div class="tag-grid">
-      <button class="tag-button">T-shirt</button>
-      <button class="tag-button">Sweater</button>
-      <button class="tag-button">Hoodie</button>
-      <button class="tag-button">Jacket</button>
-      <button class="tag-button">Vest</button>
-      <button class="tag-button">Jeans</button>
-      <button class="tag-button">Pants</button>
-      <button class="tag-button">Shorts</button>
-      <button class="tag-button">Skirt</button>
-      <button class="tag-button">Leggings</button>
-      <button class="tag-button">Hat</button>
-      <button class="tag-button">Scarf</button>
-      <button class="tag-button">Gloves</button>
-      <button class="tag-button">Belt</button>
-      <button class="tag-button">Tie</button>
-      <button class="tag-button">Socks</button>
-      <button class="tag-button">Shoes</button>
-      <button class="tag-button">Boots</button>
-      <button class="tag-button">Sneakers</button>
-      <button class="tag-button">Slippers</button>
-      <button class="tag-button">Sandals</button>
-      <button class="tag-button">Dress</button>
-      <button class="tag-button">Suit</button>
-      <button class="tag-button">Underwear</button>
-      <button class="tag-button">Pajamas</button>
-      <button class="tag-button">Sports Wear</button>
-    </div>
+<main>
+
+  <!-- Page Header -->
+  <div class="page-header">
+      <h2 class="page-title">Accessible Fashion Forum</h2>
+      <div class="page-divider"></div>
+      <p class="page-intro">
+      Connect with others, ask questions, share recommendations, and learn from real experiences in the accessible fashion community.
+      Browse posts, filter by tags, and explore discussions on clothing solutions that meet diverse needs.
+      </p>
   </div>
 
-  <!-- Disability Tags Column -->
+<!-- ================= TAGS ================= -->
+
+<div class="filter-section">
+
+  <!-- Clothing -->
   <div class="filter-box">
-    <div class="tag-header">
-        <img src="https://cdn-icons-png.flaticon.com/512/126/126422.png" alt="tag icon" class="tag-icon" />
-        <h3 class="filter-title">Disability Tags</h3>
+    <!-- ROW (Title left + Search Bar right) -->
+    <div class="tag-header-row">
+        <div class="tag-header">
+            <img src="https://cdn-icons-png.flaticon.com/512/126/126422.png" class="tag-icon">
+            <h3 class="filter-title">Clothing Tags</h3>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-box">
+            <img src="https://icon-library.com/images/search-png-icon/search-png-icon-22.jpg" class="search-icon">
+        </div>
     </div>
-    <div class="tag-grid">
-      <button class="tag-button">Wheelchair</button>
-      <button class="tag-button">Amputee</button>
-      <button class="tag-button">Limb Differences</button>
-      <button class="tag-button">Blind</button>
-      <button class="tag-button">Visually Impaired</button>
-      <button class="tag-button">Elderly</button>
-      <button class="tag-button">Autism</button>
-      <button class="tag-button">Sensory Processing</button>
-      <button class="tag-button">Neuromuscular Disorders</button>
-      <button class="tag-button">Cognitive Disabilities</button>
-      <button class="tag-button">Developmental Disabilities</button>
-      <button class="tag-button">Medical Device</button>
-      <button class="tag-button">Incontinence Needs</button>
-      <button class="tag-button">Chronic Illnesses</button>
-      <button class="tag-button">ADHD</button>
-      <button class="tag-button">Temporary Disabilities</button>
-      <button class="tag-button">Little People/ Dwarfism</button>
+
+      <!-- Tag Grid -->
+      <div class="tag-grid collapsible-tags">
+        <% const clothingTags = ["T-shirt","Sweater","Hoodie","Jacket","Vest","Jeans","Pants","Shorts","Skirt","Leggings","Hat","Scarf","Gloves","Belt","Tie","Socks","Shoes","Boots","Sneakers","Slippers","Sandals","Dress","Suit","Underwear","Pajamas","Sports Wear"]; %>
+        
+        <% clothingTags.forEach((tag, i)=>{ %>
+          <button class="tag-button <%= i >= 5 ? 'hidden-tag' : '' %>"><%= tag %></button>
+        <% }) %>
+
+        <button class="toggle-tags-btn">Show More</button>
+      </div>
+    
+  </div>
+
+  <!-- Disability -->
+  <div class="filter-box">
+    <!-- ROW: title on left + search on right -->
+    <div class="tag-header-row">
+        <div class="tag-header">
+            <img src="https://cdn-icons-png.flaticon.com/512/126/126422.png" class="tag-icon">
+            <h3 class="filter-title">Disability Tags</h3>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-box">
+            <img src="https://icon-library.com/images/search-png-icon/search-png-icon-22.jpg" class="search-icon">
+        </div>
     </div>
+      <div class="tag-grid collapsible-tags">
+        <% const disabilityTags = ["Visually Impaired","Sensory Processing","Wheelchair","Amputee","Developmental Disabilities","Medical Device","Incontinence Needs","Autism","Elderly","Limb Differences","Blind","Chronic Illnesses","ADHD","Temporary Disabilities","Neuromuscular Disorders","Cognitive Disabilities","Little People/ Dwarfism"]; %>
+
+        <% disabilityTags.forEach((tag,i)=>{ %>
+          <button class="tag-button <%= i >= 3 ? 'hidden-tag' : '' %>"><%= tag %></button>
+        <% }) %>
+
+        <button class="toggle-tags-btn">Show More</button>
+      </div>
+    
   </div>
 </div>
 
+<br>
 
-  <div id="post-container"></div>
+<!-- Where posts will populate later -->
+<div id="post-container"></div>
 
-
-    </main>
-
-    <script src="forum.js"></script> <!-- at the bottom of the page -->
-</body>
+</main>
 
 <%- include("partials/footer") %>
+</body>

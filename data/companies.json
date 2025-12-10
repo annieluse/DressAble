@@ -1,44 +1,86 @@
 [
   {
-    "id": "adaptive-brand-co",
-    "name": "Adaptive Brand Co.",
-    "logo": "https://via.placeholder.com/120",
-    "description": "Pioneering adaptive clothing with magnetic closures and easy-access designs for everyday comfort.",
+    "id": "tommy-hilfiger",
+    "name": "Tommy Hilfiger Adaptive",
+    "logo": "https://example.com/tommy.png",
+    "description": "Classic American clothing with magnetic closures, seated-friendly fits, and adaptive features.",
     "website": null
   },
   {
-    "id": "inclusive-fashion-inc",
-    "name": "Inclusive Fashion Inc.",
-    "logo": "https://via.placeholder.com/120",
-    "description": "Stylish, functional clothing designed with input from the disability community.",
+    "id": "no-limbits",
+    "name": "No Limbits",
+    "logo": "https://example.com/nolimbits.png",
+    "description": "Modern adaptive clothing for amputees, wheelchair users, sensory needs, and limited dexterity.",
     "website": null
   },
   {
-    "id": "easywear-designs",
-    "name": "EasyWear Designs",
-    "logo": "https://via.placeholder.com/120",
-    "description": "Comfortable, adaptive clothing solutions for individuals with limited mobility.",
+    "id": "joe-and-bella",
+    "name": "Joe & Bella",
+    "logo": "https://example.com/joeandbella.png",
+    "description": "Adaptive clothing focused on aging adults and mobility limitations with easy-dress designs.",
     "website": null
   },
   {
-    "id": "universal-style",
-    "name": "Universal Style",
-    "logo": "https://via.placeholder.com/120",
-    "description": "Fashion-forward adaptive wear that doesn't compromise on style or accessibility.",
+    "id": "magnaready",
+    "name": "MagnaReady",
+    "logo": "https://example.com/magnaready.png",
+    "description": "Magnetic-closure apparel for individuals with limited mobility and dexterity.",
     "website": null
   },
   {
-    "id": "access-apparel",
-    "name": "Access Apparel",
-    "logo": "https://via.placeholder.com/120",
-    "description": "Innovative clothing designs featuring adaptive features and sensory-friendly materials.",
+    "id": "seven7",
+    "name": "Seven7 Adaptive",
+    "logo": "https://example.com/seven7.png",
+    "description": "Adaptive denim with stretch material, velcro/magnet options and comfort while seated.",
     "website": null
   },
   {
-    "id": "mobility-fashion",
-    "name": "Mobility Fashion",
-    "logo": "https://via.placeholder.com/120",
-    "description": "Wheelchair-friendly clothing with seated fit and easy dressing features.",
+    "id": "zappos-adaptive",
+    "name": "Zappos Adaptive",
+    "logo": "https://example.com/zappos.png",
+    "description": "Adaptive shoes and clothing designed for convenience and sensory comfort.",
+    "website": null
+  },
+  {
+    "id": "adidas-seated",
+    "name": "Adidas Seated Line",
+    "logo": "https://example.com/adidas.png",
+    "description": "Athletic clothing designed specifically for seated athletes including wheelchair basketball.",
+    "website": null
+  },
+  {
+    "id": "friendly-shoes",
+    "name": "Friendly Shoes",
+    "logo": "https://example.com/friendly.png",
+    "description": "Easy-entry shoes with zipper systems for people with low dexterity.",
+    "website": null
+  },
+  {
+    "id": "nike-flyease",
+    "name": "Nike FlyEase",
+    "logo": "https://example.com/nike.png",
+    "description": "Adaptive shoes and apparel featuring hands-free entry, collapsible heels, and accessible closures.",
+    "website": null
+  },
+  {
+    "id": "jcpenney-jamey-perry",
+    "name": "JCPenney - Jamey Perry",
+    "logo": "https://example.com/jcpenney.png",
+    "description": "Wheelchair-friendly clothing designed for seated wear, sensory comfort, and easy dressing.",
+    "website": null
+  },
+  {
+    "id": "buck-and-buck",
+    "name": "Buck & Buck",
+    "logo": "https://example.com/buck.png",
+    "description": "Adaptive underwear and clothing designed for mobility limits and personal care needs.",
+    "website": null
+  },
+  {
+    "id": "vans-adaptive",
+    "name": "Vans Adaptive",
+    "logo": "https://example.com/vans.png",
+    "description": "Soft-insole, sensory-friendly shoes and tees (limited continuation).",
     "website": null
   }
 ]

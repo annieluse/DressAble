@@ -36,6 +36,8 @@ app.get("/forum", (req, res) => {
 
 const companies = require("./data/companies.json");
 const products = require("./data/products.json");
+const disabilities = require("./data/disabilities.json");
+const companyPage = require("./data/companyPage.json");
 
 
 app.get("/companies", (req, res) => {
@@ -43,9 +45,15 @@ app.get("/companies", (req, res) => {
 });
 
 app.get("/companies/:id", (req, res) => {
-  const company = companies.find(c => c.id === req.params.id);
-  res.render("company", { company });
+    const company = companyPage.find(c => c.id === req.params.id);
+
+    if (!company) {
+        return res.status(404).send("Company not found");
+    }
+
+    res.render("companyPage", { company }); // renders detailed template
 });
+
 
 app.get("/products", (req, res) => {
   res.render("products", { products });
@@ -55,6 +63,16 @@ app.get("/products/:id", (req, res) => {
   const product = products.find(c => c.id === req.params.id);
   res.render("product", { product });
 });
+
+app.get("/disabilities", (req, res) => {
+  res.render("disabilities", { disabilities });
+});
+
+app.get("/disabilities/:id", (req, res) => {
+  const disability = disabilties.find(c => c.id === req.params.id);
+  res.render("disability", { disability });
+});
+
 
 
 //If a user types a wrong URL, send them to 404.ejs

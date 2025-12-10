@@ -71,27 +71,31 @@
 /* Parent container for both tag groups */
 .filter-section {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
   gap: 50px;
-  margin-top: 35px;
   flex-wrap: wrap; /* keeps layout clean on smaller screens */
+  background: #e7f8fc;      /* subtle background tint */
+  padding: 25px 25px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
 }
 
-/* Individual tag boxes */
 .filter-box {
   background: #b7e4ee;
-  padding: 30px 35px;
+  padding: 10px 15px;
   border-radius: 22px;
   width: 450px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   transition: 0.25s ease;
 }
 
 .filter-box:hover {
-  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
-/* Make buttons look like rounded pills again */
+/* Make buttons look like rounded pills*/
 .tag-button {
   background: #ffe6b6;
   border: none;
@@ -113,36 +117,89 @@
 .tag-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  max-width: 380px;
-  margin: 0 auto;
+  gap: 12px;
+  justify-content:space-evenly;
+  max-width: 100%;
+  margin: 6px auto;
 }
 
-/* Reduce padding to improve text-block balance */
 .filter-box {
-  padding: 25px 30px 30px;
-  width: 430px; /* Slightly narrower to match screenshot spacing */
+  flex: 1 1 450px;      /* grow/shrink but minimum width 400px */
+  max-width: 600px;     /* stops them from getting too large */
 }
 
-/* Align icon + title better visually */
+
+/* Align icon + title*/
 .tag-header {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-height: 85px;
   gap: 8px;
-  margin-bottom: 15px;
 }
+
 
 .filter-title {
-  font-size: 20px;
-  font-weight: 700;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  max-height: 75px;
+  margin-top: 6px; 
+  margin-bottom: 10px;            /* <-- removes default margin */
+  padding: 0;  
 }
 
-/* Optional slight vertical nudge on icon */
+.filter-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #007c91;
+  margin: 6px auto 0;
+  border-radius: 10px;
+}
+
+
 .tag-icon {
   width: 24px;
-  transform: translateY(2px);
+  transform: translateY(-4px);
+}
+
+.tag-header-row {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  margin-bottom:10px;
+}
+
+.search-container {
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* turn search input into an input instead of div */
+.search-box{
+  background:white;
+  border:none;
+  padding:7px 14px;
+  border-radius:10px;
+  font-size:14px;
+  box-shadow:0 2px 4px rgba(0,0,0,0.08);
+  width:150px;
+}
+
+.search-icon{
+  width:22px;
+  cursor:pointer;
+}
+
+
+.search-title{
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .tag-button.active {
@@ -150,5 +207,36 @@
   color: white;
   transform: none;            /* prevent jump scaling */
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.hidden-tag { display:none; }
+
+.collapsible-tags.expanded .hidden-tag {
+  display:inline-flex;
+  justify-content:space-evenly;
+
+}
+
+
+.toggle-tags-btn {
+  background:#007c91;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  white-space:nowrap;      /* <-- prevents wrapping mid-word */
+  order: 999; 
+  display:inline-flex;
+  align-items:center;
+  justify-content:space-evenly;
+}
+
+.toggle-tags-btn:hover { 
+  background:#005a67; 
+  transform: scale(1.06);
 }
 
