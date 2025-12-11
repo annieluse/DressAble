@@ -21,12 +21,15 @@ app.set("view engine", "ejs");
 
 // Serve static files (CSS, images, client JS)
 app.use(express.static("public"));
+app.use(express.json()); // allows JSON body parsing
 
+//data in the json files
 const companies = require("./data/companies.json");
 const products = require("./data/products.json");
 const disabilities = require("./data/disabilities.json");
 const companyPage = require("./data/companyPage.json");
 
+//data for the forum (user-generated content that is permanently stored by the app’s back end)
 const fs = require("fs");
 const forumPostsPath = path.join(__dirname, "data/forumPostData.json");
 let forumPosts = JSON.parse(fs.readFileSync(forumPostsPath));
@@ -38,21 +41,21 @@ app.get("/", (req, res) => {
 
 //forum route
 app.get("/forum", (req, res) => {
-    res.render("forum");
+    res.render("forum"); //render forum page using the ejs
 });
 
+// Route to send all forum posts as JSON data
 app.get("/api/forum-posts", (req, res) => {
-    res.json(forumPosts);
+    res.json(forumPosts);  // Send current list of posts to the browser
 });
 
-app.use(express.json()); // allows JSON body parsing
-
+// Route to receive a new post from the client (when a user clicks Submit Post)
 app.post("/api/forum-posts", (req, res) => {
-    const newPost = req.body;
+    const newPost = req.body; // The new post data sent in the POST request body
 
-    forumPosts.push(newPost);
+    forumPosts.push(newPost); // Add the new post to our array of posts
 
-    // Save to file
+     // Save updated posts list to the JSON file so posts stay permanent
     fs.writeFileSync(forumPostsPath, JSON.stringify(forumPosts, null, 2));
 
     res.status(201).json({ message: "Post saved!" });
@@ -79,6 +82,7 @@ app.get("/products", (req, res) => {
   res.render("products", { products });
 });
 
+//not used yet
 app.get("/products/:id", (req, res) => {
   const product = products.find(c => c.id === req.params.id);
   res.render("product", { product });
@@ -89,12 +93,11 @@ app.get("/disabilities", (req, res) => {
   res.render("disabilities", { disabilities });
 });
 
+//not used yet
 app.get("/disabilities/:id", (req, res) => {
   const disability = disabilties.find(c => c.id === req.params.id);
   res.render("disability", { disability });
 });
-
-
 
 //If a user types a wrong URL, send them to 404.ejs
 app.use((req, res) => {
