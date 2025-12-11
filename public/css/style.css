@@ -43,7 +43,7 @@ header {
   margin: 0;
   padding: 0;   /* removes upward shift */
   line-height: 1; /* keeps it vertically centered */
-    transform: translateY(3px)
+  transform: translateY(3px)
 }
 
 .site-title a {

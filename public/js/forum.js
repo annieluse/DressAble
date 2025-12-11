@@ -1,55 +1,3 @@
-const forumPosts = [
-    {
-        "title": "Adaptive jeans for seated comfort?",
-        "date": "2025-01-20",
-        "tags": ["Wheelchair", "Pants", "Denim"],
-        "photoUrl": "images/jeans.jpg",
-        "description": "I'm searching for jeans that don't dig into the waist or bunch when seated all day. Any brands you recommend?"
-    },
-    {
-        "title": "Looking for sensory-friendly shirts",
-        "date": "2025-03-02",
-        "tags": ["Sensory", "Tops", "Soft Fabric"],
-        "photoUrl": "images/sensory-shirt.jpg",
-        "description": "I need shirts without itchy seams or tags. Soft fabrics preferred! Any good stores or online brands?"
-    },
-    {
-        "title": "Need winter boots with easy closures",
-        "date": "2024-12-01",
-        "tags": ["Shoes", "Mobility", "Winter"],
-        "photoUrl": "images/winter-boots.jpg",
-        "description": "Traditional laces are tough for me with hand mobility issues. Looking for zipper or velcro winter boots recommendations."
-    },
-    {
-        "title": "Fashion tips for prosthetic users?",
-        "date": "2025-02-12",
-        "tags": ["Amputee", "Style", "Advice"],
-        "photoUrl": "images/prosthetic-fashion.jpg",
-        "description": "How do you style outfits that work well with prosthetics? I'm new to this and would love advice or outfit inspiration."
-    },
-    {
-        "title": "Brand recommendations for chronic pain comfort",
-        "date": "2025-01-08",
-        "tags": ["Chronic Pain", "Comfort Wear"],
-        "photoUrl": "images/comfort-wear.jpg",
-        "description": "Long wear clothing that puts pressure in the wrong places can be tough. Looking for soft, flexible, pain-friendly clothing lines."
-    },
-    {
-        "title": "Where to find magnetic closures for jackets?",
-        "date": "2024-11-19",
-        "tags": ["Outerwear", "Magnetic Closures", "Hands-Free"],
-        "photoUrl": "images/magnetic-jacket.jpg",
-        "description": "Buttons are difficult for me — I've heard of jackets with magnetic closures but don’t know where to buy them."
-    },
-    {
-        "title": "Adaptive swimwear resources?",
-        "date": "2024-08-25",
-        "tags": ["Swimwear", "Adaptive Clothing"],
-        "photoUrl": "images/adaptive-swimwear.jpg",
-        "description": "Looking for swimsuits that are accessible to put on and comfortable for mobility limitations. Any brands you trust?"
-    }
-];
-
 function renderPosts(posts){
     const container = document.getElementById('post-container');
 
@@ -80,7 +28,7 @@ function renderPosts(posts){
 }
 
 // Store all posts for filtering
-let allPosts = [...forumPosts]; // Keep original data
+let allPosts = [];
 let activeFilters = []; // Track which tags are selected
 
 // Get all tag buttons
@@ -124,7 +72,70 @@ function filterPosts() {
     renderPosts(filteredPosts);
 }
 
-renderPosts(forumPosts);
+
+document.getElementById("submit-post-btn").addEventListener("click", () => {
+    const newPost = {
+        title: document.getElementById("title-input").value,
+        date: document.getElementById("date-input").value,
+        tags: document.getElementById("tags-input").value.split(",").map(t => t.trim()),
+        photoUrl: document.getElementById("photo-input").value,
+        description: document.getElementById("description-input").value
+    };
+
+    // Send to server
+    fetch("/api/forum-posts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newPost)
+    })
+    .then(res => res.json())
+    .then(() => {
+    // Add new post to local list
+    allPosts.push(newPost);
+    renderPosts(allPosts);
+
+    // RESET FORM FIELDS
+    document.getElementById("title-input").value = "";
+    document.getElementById("date-input").value = "";
+    document.getElementById("tags-input").value = "";
+    document.getElementById("photo-input").value = "";
+    document.getElementById("description-input").value = "";
+
+    // CLOSE THE MODAL
+    closeModal();
+    });
+
+});
+
+
+const openBtn = document.getElementById("open-form-btn");
+const modal = document.getElementById("post-modal");
+const overlay = document.getElementById("modal-overlay");
+const closeBtn = document.getElementById("close-modal");
+
+// OPEN MODAL
+openBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});
+
+// CLOSE MODAL
+closeBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+function closeModal() {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+}
+
+
+
+fetch("/api/forum-posts")
+  .then(res => res.json())
+  .then(data => {
+      allPosts = data;
+      renderPosts(allPosts);
+});
 
 /* ===========================
    SHOW MORE / SHOW LESS TAGS

@@ -83,7 +83,29 @@
   </div>
 </div>
 
-<br>
+<button id="open-form-btn">Add Post</button>
+
+<!-- POPUP BACKDROP -->
+<div id="modal-overlay" class="hidden"></div>
+
+<!-- POPUP FORM -->
+<div id="post-modal" class="hidden">
+
+  <div class="modal-content">
+    <span id="close-modal">&times;</span>
+    <h3>Create a New Forum Post</h3>
+
+    <input type="text" id="title-input" placeholder="Post Title">
+    <input type="date" id="date-input">
+    <input type="text" id="tags-input" placeholder="Tags (comma separated)">
+    <input type="text" id="photo-input" placeholder="Photo URL">
+    <textarea id="description-input" placeholder="Write your post..."></textarea>
+
+    <button id="submit-post-btn">Submit Post</button>
+  </div>
+
+</div>
+
 
 <!-- Where posts will populate later -->
 <div id="post-container"></div>
